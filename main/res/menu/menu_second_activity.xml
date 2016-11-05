@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.juand.main.SecondActivity">
+    <item
+        android:id="@+id/action_QRscanner"
+        android:orderInCategory="4"
+        android:title="Scan Code QR"
+        tools:ignore="HardcodedText" />
+
+</menu>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_factura"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.juand.clientapp.Factura"
+    tools:showIn="@layout/activity_factura2"
+    android:background="@drawable/fondoapp1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/zxing_status_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="81dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize,UselessLeaf"
+            android:background="@color/zxing_status_text">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:textSize="24sp"
+                android:textColor="@color/zxing_result_view"
+                android:text="Estimado cliente:"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:id="@+id/textCliente"
+                android:textColor="@color/zxing_result_view"
+                android:textSize="24sp" />
+
+            <TextView
+                android:text="Su asiento fue:"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/textView19"
+                android:textSize="24sp"
+                android:textColor="@color/zxing_result_view"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:id="@+id/textMesa"
+                android:textSize="24sp"
+                android:textColor="@color/zxing_result_view" />
+
+            <TextView
+                android:text="El total a pagar de su orden es:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                android:textSize="24sp"
+                android:textColor="@color/zxing_result_view"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="129dp"
+                android:id="@+id/textPrecio"
+                android:textSize="24sp"
+                android:textColor="@color/zxing_result_view" />
+
+            <TextView
+                android:text="Puede pagar su factura por medio de clientApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView23"
+                android:textSize="24sp"
+                android:textColor="@color/zxing_result_view"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Pagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPagar"
+        android:layout_marginTop="13dp"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
+
+    <TextView
+        android:text="Factura final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textColor="@color/zxing_result_view"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:layout_alignTop="@+id/btnPagar"
+        android:layout_toLeftOf="@+id/btnPagar"
+        android:layout_toStartOf="@+id/btnPagar"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        tools:ignore="DuplicateIds,HardcodedText" />
+
+</RelativeLayout>

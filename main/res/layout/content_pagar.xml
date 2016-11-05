@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_pagar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.juand.clientapp.Pagar"
+    tools:showIn="@layout/activity_pagar"
+    android:background="@drawable/fondoapp1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/visa1"
+        android:id="@+id/imageView3"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
+
+    <TextView
+        android:text="Ingrese su numero y nombre de targeta:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView11"
+        android:textSize="36sp"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Sistema de Pago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/txtNomtarjeta"
+        android:hint="               Ingrese Nombre de tarjeta"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNumtarjeta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/btnTarjeta"
+        android:text="Aceptar"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtNumtarjeta"
+        android:layout_below="@+id/txtNomtarjeta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:hint="Ingrese número de la tarjeta"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

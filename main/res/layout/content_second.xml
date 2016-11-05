@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.juand.main.SecondActivity"
+    tools:showIn="@layout/activity_second"
+    android:background="@drawable/fondoapp1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:id="@+id/textNomCliente"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/background_dark"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Para continuar, por favor escanea el código de tu mesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Te has conectado con éxito a RestChef!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/textView12"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/background_dark"
+        android:layout_below="@+id/textNomCliente"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:textAlignment="center" />
+</RelativeLayout>
